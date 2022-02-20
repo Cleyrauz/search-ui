@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import ResultList from "../components/ResultList";
 import SearchForm from "../components/SearchForm";
 
 const SearchBox = () => {
@@ -12,7 +13,7 @@ const SearchBox = () => {
             "delenit",
             "eripuit"
           ],
-          "weight": 3
+          "weight": 2
         },
         {
           "title": "Turpis ad",
@@ -38,6 +39,7 @@ const SearchBox = () => {
   return (
     <>
         <SearchForm />
+        <ResultList results={results} />
     </>
   );
 
