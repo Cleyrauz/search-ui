@@ -23,9 +23,10 @@ const handleTextChange = (evt) => {
   }
 
   return (
-    <form onSubmit={handleSearchSubmit}>
+    <form className="form-container" onSubmit={handleSearchSubmit}>
       <input 
         type="text"
+        className="input"
         placeholder="Search something..."
         value={text}
         onChange={handleTextChange}
@@ -33,7 +34,10 @@ const handleTextChange = (evt) => {
       <button 
         type="submit"
         value="Post"
-      >Search</button>
+        className="search-btn"
+      >
+        Search
+      </button>
     </form>
   )
 

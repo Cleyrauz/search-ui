@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import ResultList from "../components/ResultList";
+import SearchList from "../components/SearchList";
 import SearchForm from "../components/SearchForm";
 
 const SearchBox = () => {
@@ -54,8 +54,10 @@ const SearchBox = () => {
         <div>
           <div className="container">
             <h1 title="Header" className="header">Awesome Search App</h1>
+            <div className="input-container">
               <SearchForm onSearchSubmit={(searchRequest) => sendRequest(searchRequest)} />
-              <SearchList results={results} />
+            </div>
+            <SearchList results={results} />
           </div>
         </div>
       </div>

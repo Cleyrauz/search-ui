@@ -52,3 +52,35 @@ code {
   font-size: 2.5rem;
   text-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.342);
 }
+
+.input-container {
+  background-color: white;
+  margin-top: 2rem;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.329);
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  display: flex;
+}
+
+.input {
+  border: none;
+  width: 90%;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.search-btn {
+  border: none;
+  padding: 0.3rem 2rem;
+  border-radius: 0.2rem;
+  background-color: #22c1c3;
+  color: white;
+  font-weight: 900;
+}
