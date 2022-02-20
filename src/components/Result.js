@@ -2,17 +2,17 @@ import React from "react";
 
 const Result = ({title, description, tags}) => {
 
-    const tagsNodes = tags.map((tag,i) => {
-        return (
-          <li key={i}>{tag}</li>
-        );
-      });
-
   return(
     <>
-        <h3>{title}</h3>
+    <div className="list-item">
+        <h2>{title}</h2>
         <p>{description}</p>
-        <ul>{tagsNodes}</ul>
+        <ul className="tags-wrapper">
+        {tags.map(tag => (
+          <li className="tag-item" key={tag}>{tag}</li>
+        ))}
+      </ul>
+    </div>
     </>
   )
 

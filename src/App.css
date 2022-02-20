@@ -101,3 +101,31 @@ code {
   overflow: auto;
   height: 90%;
 }
+
+.list-item {
+  border-bottom: 0.05rem solid rgba(0, 0, 0, 0.082);
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+ul.tags-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-inline-start: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.tag-item {
+  border: none;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.2rem;
+  margin: 0 0.3rem;
+  background-color: white;
+  border: 1px solid #22c1c3;
+  color: #22c1c3;
+  font-weight: 900;
+  font-size: 0.8rem;
+}
