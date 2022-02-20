@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import SearchForm from "../components/SearchForm";
 
 const SearchBox = () => {
 
@@ -36,7 +37,7 @@ const SearchBox = () => {
 
   return (
     <>
-        <h1>This is a search box</h1>
+        <SearchForm />
     </>
   );
 
