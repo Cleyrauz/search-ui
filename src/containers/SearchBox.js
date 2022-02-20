@@ -49,11 +49,16 @@ const SearchBox = () => {
 
   return (
     <>
-        <div className="App">
-            <div className="banner" />
-                <SearchForm onSearchSubmit={(searchRequest) => sendRequest(searchRequest)} />
-                <ResultList results={results} />
+<div className="App">
+        <div className="banner" />
+        <div>
+          <div className="container">
+            <h1 title="Header" className="header">Awesome Search App</h1>
+              <SearchForm onSearchSubmit={(searchRequest) => sendRequest(searchRequest)} />
+              <SearchList results={results} />
+          </div>
         </div>
+      </div>
     </>
   );
 
