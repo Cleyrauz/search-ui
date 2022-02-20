@@ -57,7 +57,11 @@ const SearchBox = () => {
             <div className="input-container">
               <SearchForm onSearchSubmit={(searchRequest) => sendRequest(searchRequest)} />
             </div>
-            <SearchList results={results} />
+            <div className="result-container">
+              <div className="list-container">
+                <SearchList results={results} />
+              </div>
+            </div>
           </div>
         </div>
       </div>
