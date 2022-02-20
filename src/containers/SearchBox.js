@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, {useState} from "react";
 import SearchList from "../components/SearchList";
 import SearchForm from "../components/SearchForm";
@@ -36,16 +37,10 @@ const SearchBox = () => {
           ]
       )
 
-  const sendRequest = (searchRequest) =>{
-    const requestOptions = {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(searchRequest)
-    };
-    fetch('http://localhost:8080/api/search', requestOptions)
-    .then(response => response.json())
-    .then(data => setSearchs(data));
-}
+      const sendRequest = async (searchRequest) =>{
+        const {data} = await axios.post('http://localhost:8080/api/search', searchRequest)
+        setSearchs(data)
+    }
 
   return (
     <>
